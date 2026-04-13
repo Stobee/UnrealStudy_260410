@@ -16,7 +16,7 @@ UMyStaticMeshComponent::UMyStaticMeshComponent()
 
 void UMyStaticMeshComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction); // 부모의 기능을 유지함
 
 	AddRelativeRotation(FRotator(0, 0, 7200.0f * DeltaTime));
 }
